@@ -6,10 +6,6 @@
   <title>WANG, Jin | Academic CV</title>
   <style>
     :root{
-      --bg:#070816;
-      --bg2:#0a1030;
-      --card:rgba(14,18,45,.76);
-      --line:rgba(137,160,255,.22);
       --text:#eef2ff;
       --muted:#b8c2f2;
       --primary:#7b7cff;
@@ -17,6 +13,8 @@
       --accent:#b35cff;
       --purpleGlow: rgba(179,92,255,.30);
       --purpleGlow2: rgba(139,76,255,.22);
+      --card:rgba(14,18,45,.76);
+      --line:rgba(137,160,255,.22);
     }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0}
@@ -32,28 +30,18 @@
       overflow-x:hidden;
     }
     a{color:inherit;text-decoration:none}
-    .wrap{
-      width:min(1180px, calc(100% - 40px));
-      margin:0 auto;
-    }
+    .wrap{width:min(1180px, calc(100% - 40px));margin:0 auto}
     header{
-      position:sticky;
-      top:0;
-      z-index:50;
+      position:sticky; top:0; z-index:50;
       backdrop-filter: blur(10px);
       background:rgba(7,8,22,.38);
       border-bottom:1px solid rgba(255,255,255,.06);
     }
     .nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-      min-height:74px;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:20px; min-height:74px;
     }
-    .brand{
-      display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.5rem;
-    }
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.5rem}
     .brand-badge{
       width:40px;height:40px;border-radius:12px;
       background:linear-gradient(135deg,var(--primary),var(--primary2));
@@ -85,10 +73,8 @@
     .hero::after{
       content:"";
       position:absolute;
-      right:-6%;
-      top:-4%;
-      width:52%;
-      height:112%;
+      right:-6%; top:-4%;
+      width:52%; height:112%;
       pointer-events:none;
       background:
         radial-gradient(circle at 40% 42%, var(--purpleGlow) 0%, rgba(179,92,255,.24) 22%, rgba(122,72,255,.16) 38%, rgba(94,208,255,.08) 52%, transparent 72%),
@@ -103,7 +89,6 @@
       border:1px solid rgba(255,255,255,.12);
       background:rgba(255,255,255,.05);
       color:#d7deff;font-size:.92rem;
-      box-shadow: inset 0 0 40px rgba(255,255,255,.02);
     }
     .hero h1{
       margin:18px 0 18px;
@@ -160,12 +145,9 @@
     .visual-blend::after{
       content:"";
       position:absolute;
-      left:-18%;
-      top:8%;
-      width:48%;
-      height:72%;
-      background:
-        radial-gradient(circle at 100% 45%, rgba(176,95,255,.34), rgba(176,95,255,.18) 32%, transparent 70%);
+      left:-18%; top:8%;
+      width:48%; height:72%;
+      background: radial-gradient(circle at 100% 45%, rgba(176,95,255,.34), rgba(176,95,255,.18) 32%, transparent 70%);
       filter:blur(42px);
       z-index:0;
       pointer-events:none;
@@ -211,13 +193,16 @@
 
     .entry{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08)}
     .entry:last-child{border-bottom:none;padding-bottom:0}
-    .date{
-      color:#89a7ff;font-weight:800;font-size:.95rem;margin-bottom:4px;
-    }
-    .role{
-      font-size:1.06rem;font-weight:800;color:white;margin-bottom:4px;
-    }
+    .date{color:#89a7ff;font-weight:800;font-size:.95rem;margin-bottom:4px}
+    .role{font-size:1.06rem;font-weight:800;color:white;margin-bottom:4px}
     .org{color:#cbd6ff;margin-bottom:8px}
+    .linkline{margin-top:8px}
+    .linkline a{
+      color:#9fd9ff;
+      text-decoration:underline;
+      word-break:break-all;
+    }
+    .linkline a:hover{color:white}
     ul.clean{margin:8px 0 0 18px;padding:0}
     ul.clean li{margin:6px 0;color:#dce4ff}
 
@@ -304,6 +289,7 @@
       <div class="card two-col">
         <h2 class="section-title">Contact</h2>
         <p><strong>Email:</strong> mswangjin26@gmail.com</p>
+        <p><strong>Website:</strong> <a href="https://mswangjin.github.io/about-me/" target="_blank">Personal Website</a></p>
         <p><strong>Location:</strong> Kensington NSW 2033, Australia</p>
         <p><a class="btn btn-primary" href="wj phd cv.pdf" download>Download CV PDF</a></p>
       </div>
@@ -365,6 +351,7 @@
             <li>Designed the system to identify key fields, including charge items, amounts, dates, addresses, and organisation names, and to highlight relevant content directly within source documents.</li>
             <li>This project reflects practical engagement with AI-assisted information extraction, document intelligence, and workflow enhancement in text- and record-intensive contexts.</li>
           </ul>
+          <div class="linkline"><strong>Project:</strong> <a href="https://bill-extraction.streamlit.app/" target="_blank">Bill Extraction Demo</a></div>
         </div>
 
         <div class="entry">
@@ -389,6 +376,7 @@
             <li>Designed mixed-language reading materials that combine English passages with selectively embedded Chinese words and expressions to support vocabulary development and character recognition among beginner learners.</li>
             <li>The project reflects an interest in AI-assisted education, language learning, and the development of accessible tools that support gradual progression toward independent comprehension.</li>
           </ul>
+          <div class="linkline"><strong>Project:</strong> <a href="https://eng-chinese-mix.streamlit.app/" target="_blank">AI Bilingual Reading Tool</a></div>
         </div>
 
         <div class="entry">
